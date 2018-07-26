@@ -14,14 +14,16 @@ Summary: The Terraform DNSMadeEasy provider
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/terraform-provider-dme-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/terraform-provider-dme-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/terraform-provider-dme-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/terraform-provider-dme-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/terraform-provider-dme-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/terraform-provider-dme-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/terraform-provider-dme-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/terraform-provider-dme-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/terraform-provider-dme-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/terraform-provider-dme-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/terraform-provider-dme-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/terraform-provider-dme-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/terraform-provider-dme/badges/version.svg)](https://anaconda.org/conda-forge/terraform-provider-dme)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/terraform-provider-dme/badges/downloads.svg)](https://anaconda.org/conda-forge/terraform-provider-dme)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-terraform--provider--dme-green.svg)](https://anaconda.org/conda-forge/terraform-provider-dme) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/terraform-provider-dme.svg)](https://anaconda.org/conda-forge/terraform-provider-dme) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/terraform-provider-dme.svg)](https://anaconda.org/conda-forge/terraform-provider-dme) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/terraform-provider-dme.svg)](https://anaconda.org/conda-forge/terraform-provider-dme) |
 
 Installing terraform-provider-dme
 =================================
