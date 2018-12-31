@@ -7,20 +7,13 @@
 
 {% set x4_plugin = name + '_v' + version + "_x4" + (".exe" if win else "")%}
 
-{% set sha256 = "" %}
-{% set sha256_win32 = "b01f8a6cf0ffa883fee11726cfeb815bce145b37795eeb12500ca35a3318b6a3" %}
-{% set sha256_win64 = "" %}
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-    url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  fn: {{ name }}-{{ version }}.tar.gz  # [not win]
-  sha256: a93f285fb7c6cfaea73ab30fa5432820780d937eee9fe32552c3ec5f8be1a61e
-
-  fn: {{ name }}-{{ version }}.zip  # [win]
+  - url: https://{{ goname }}/archive/v{{ version }}.tar.gz
+    sha256: a93f285fb7c6cfaea73ab30fa5432820780d937eee9fe32552c3ec5f8be1a61e
 
 build:
   number: 1001
@@ -31,8 +24,7 @@ build:
 
 requirements:
   build:
-    - go 1.8.*  # [not win]
-    - toolchain  # [not win]
+    - {{ compiler('go') }}
   run:
     - terraform >=0.10  # [unix]
     - terraform >=0.11.11  # [win]
