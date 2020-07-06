@@ -1,6 +1,6 @@
 {% set provider = "DME" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 {% set name = goname.split('/')[-1] %}
 {% set pkg_src = ('gopath/src/'+goname).replace("/",os.sep) %}
@@ -14,13 +14,13 @@ package:
   version: {{ version }}
 
 source:
-  - folder:  {{ pkg_src }}
+  - folder: {{ pkg_src }}
     url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-    sha256: a93f285fb7c6cfaea73ab30fa5432820780d937eee9fe32552c3ec5f8be1a61e
+    sha256: 890525861e740ea0a24743030a15624133a7b1ce01ffcff52b4a1d0562420fca
 
 
 build:
-  number: 1001
+  number: 0
   script:
     - pushd {{ pkg_src }}
     - go build -v -o {{ target_gobin }}{{ x4_plugin }}{{ target_goexe }}
